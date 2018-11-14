@@ -1,5 +1,5 @@
 {
-  "name": "ap-calculator",
+  "name": "wows-shell-chart",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
+    "jquery": "^3.3.1",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
+    "c3": "^0.6.8",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
