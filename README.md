@@ -1,4 +1,4 @@
-# ap-calculator
+# WoWS Shell Chart
 
 ## Project setup
 ```
