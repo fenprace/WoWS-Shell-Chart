@@ -3,6 +3,7 @@
       <div id="selectForm">
         <span>Version:</span>
         <select v-model="selectedVersion">
+          <option value="WIP">Working In Progress</option>
           <option value="0.7.11">0.7.11</option>
           <option value="0.7.10">0.7.10</option>
         </select>
@@ -178,7 +179,7 @@ export default {
     color: black;
     font-size: 20px;
     line-height: 40px;
-    max-width: 250px;
+    max-width: 150px;
   }
 
   #selectForm button {
