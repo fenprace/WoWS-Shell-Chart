@@ -3,9 +3,10 @@
       <div id="selectForm">
         <span>Version:</span>
         <select v-model="selectedVersion">
-          <option value="WIP">Working In Progress</option>
+          <option value="0.7.12">0.7.12</option>
           <option value="0.7.11">0.7.11</option>
           <option value="0.7.10">0.7.10</option>
+          <option value="WIP">Working In Progress</option>
         </select>
 
         <span>Tier:</span>
@@ -88,7 +89,7 @@ import ShipChart from './ShipChart.vue'
 export default {
   data: function() {
     return {
-      selectedVersion: '0.7.11',
+      selectedVersion: '0.7.12',
       selectedType: '',
       selectedNation: '',
       selectedTier: '',
@@ -101,7 +102,7 @@ export default {
 
   computed: {
     currentVersion: function () {
-      if (this.selectedVersion == '') return '0.7.11';
+      if (this.selectedVersion == '') return '0.7.12';
       return this.selectedVersion;
     },
 
@@ -206,8 +207,14 @@ export default {
     width: 100%;
   }
 
+  #shipSelector th {
+    padding-left: 10px;
+  }
+
+
   #shipSelector td {
     border-bottom: 1px dashed #AAAAAA;
+    padding-left: 10px;
   }
 
   #shipSelector tbody.even {
